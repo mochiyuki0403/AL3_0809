@@ -20,7 +20,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// ゲームウィンドウの作成
 	win = WinApp::GetInstance();
-	win->CreateGameWindow(L"GC2D_11_モチダ_ユキヤ_AL3");
+	win->CreateGameWindow(L"GC2D_11_モチダ_ユキヤ_2-1");
 
 	// DirectX初期化処理
 	dxCommon = DirectXCommon::GetInstance();
@@ -56,7 +56,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	primitiveDrawer = PrimitiveDrawer::GetInstance();
 	primitiveDrawer->Initialize();
 #pragma endregion
-
 	// ゲームシーンの初期化
 	gameScene = new GameScene();
 	gameScene->Initialize();
